@@ -16,5 +16,4 @@ COPY ./requirements.txt /app
 
 RUN pip install -r requirements.txt
 
-ENV PORT=8000
 COPY . /app/

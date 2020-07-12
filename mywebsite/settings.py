@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'accounts',
     'crispy_forms',
     'rest_framework',
-    'rest_framework_swagger',
+    'drf_yasg',
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MIDDLEWARE = [

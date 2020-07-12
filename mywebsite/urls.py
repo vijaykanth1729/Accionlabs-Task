@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings # to import static in deployment
+from django.conf.urls.static import static # to import static in deployment
 from django.conf.urls import url
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
@@ -41,3 +43,6 @@ urlpatterns = [
     path('', include('blog.urls', namespace='blog')),
     path('accounts/', include('accounts.urls', namespace='accounts')),
 ]
+urlpatterns = [
+
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

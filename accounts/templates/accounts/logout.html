@@ -1,0 +1,5 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<h4 class="text-center">You have been logged out successfully!</h4>
+<center><a class="btn btn-primary" href="{% url 'accounts:login' %}">Login Back</a></center>
+{% endblock %}

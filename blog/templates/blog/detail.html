@@ -1,0 +1,6 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<h3>Title: {{ post.title }}</h3>
+{% include 'blog/modal.html' %}
+<a class="btn btn-primary ml-3 mb-3" href="{% url 'blog:home' %}">Back To Home</a>
+{% endblock %}

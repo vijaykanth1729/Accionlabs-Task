@@ -1,0 +1,24 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<h2 class="text-center" style="color:green">Available Posts From DataBase</h2>
+<table class="table table-hover table-bordered">
+  <thead class="thead-dark">
+  <tr>
+    <th>Title</th>
+    <th>Message</th>
+    <th>Palindrome_Check</th>
+  </tr>
+  </thead>
+  {% for post in posts %}
+  <tr>
+    <td><a href="{% url 'blog:detail' post.id %}">{{ post.title }}<a></td>
+    <td>{{ post.message }}</td>
+    {% if post in posts_new %}
+    <td> {{ post.message }} <i class="fa fa-check-square ml-2" style="font-size:20px;color:green"></i></td>
+      {% else %}
+        <td><i class="fa fa-close ml-5" style="font-size:20px;color:red"></i></td>
+      {% endif %}
+  {% endfor %}
+</tr>
+</table>
+{% endblock %}

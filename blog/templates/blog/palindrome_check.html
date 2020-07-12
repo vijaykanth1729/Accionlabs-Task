@@ -1,0 +1,7 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<h3 style="color:red">{{ post }}</h3>
+
+<a href="{% url 'blog:home' %}" class="btn btn-info btn-lg mt-3">Back to home</a>
+
+{% endblock %}

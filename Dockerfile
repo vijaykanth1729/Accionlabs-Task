@@ -12,8 +12,8 @@ ENV DEBUG 0
 WORKDIR /app
 
 # install dependencies
-COPY ./requirements.txt /app
+COPY ./requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY . /app/
+COPY . .

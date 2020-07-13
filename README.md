@@ -10,14 +10,14 @@ Allowd Urls:
   [Make sure to change the allowed hosts in settings.py file of mywebsite]
   
   Production: 
-  https://accionlabs-vijay.herokuapp.com
+  https://accionlabs-task.herokuapp.com
 
 This project is deployed to heroku platform using Dockerfile.
 
 Steps followed :
-  1) heroku create  appname(eg: accionlabs-vijay)
-  2) heroku config:set SECRET_KEY=SOME_SECRET_VALUE -a accionlabs-vijay
-  3) ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'accionlabs-vijay.herokuapp.com']
+  1) heroku create  appname(eg: accionlabs-task)
+  2) heroku config:set SECRET_KEY=SOME_SECRET_VALUE -a accionlabs-task
+  3) ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'accionlabs-task.herokuapp.com']
 
 Following the Build Manifest file:
   Heroku builds and deploys Docker images based on a heroku.yml manifest file.
@@ -27,12 +27,12 @@ Following the Build Manifest file:
  
  With that, initialize a Git repo and create a commit.
 Then, add the Heroku remote:
-   heroku git:remote -a accionlabs-vijay.herokuapp.com
+   heroku git:remote -a accionlabs-task.herokuapp.com
   
  git push heroku master
  
  
- Verify https://accionlabs-vijay.herokuapp.com/   -->This works..
+ Verify https://accionlabs-task.herokuapp.com/   -->This works..
  
 
 

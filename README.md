@@ -3,13 +3,13 @@ Blog post which determines the palindrome property and allows users to perform C
 
 This task is developed using Django and Django-Rest-Framework.
 
-Allowd Urls: 
-  Local: 
-  localhost:8000 (or) 
+Allowd Urls:
+  Local:
+  localhost:8000 (or)
   127.0.0.1:8000    
   [Make sure to change the allowed hosts in settings.py file of mywebsite]
-  
-  Production: 
+
+  Production:
   https://accionlabs-task.herokuapp.com
 
 This project is deployed to heroku platform using Dockerfile.
@@ -21,19 +21,15 @@ Steps followed :
 
 Following the Build Manifest file:
   Heroku builds and deploys Docker images based on a heroku.yml manifest file.
-  
+
   4) heroku update beta
   5) heroku plugins:install @heroku-cli/plugin-manifest
- 
+
  With that, initialize a Git repo and create a commit.
 Then, add the Heroku remote:
    heroku git:remote -a accionlabs-task.herokuapp.com
-  
+
  git push heroku master
- 
- 
+
+
  Verify https://accionlabs-task.herokuapp.com/   -->This works..
- 
-
-
-

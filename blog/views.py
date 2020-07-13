@@ -10,7 +10,7 @@ from rest_framework import status
 
 
 def index(request):
-    posts = MyBlog.objects.all()
+    posts = MyBlog.objects.order_by('-updated')
     new_data = []
     for post in posts:
         if post.message == post.message[::-1]:
